@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link href="style.css" rel="stylesheet" />
+	<title>klava</title>
+</head>
+
+<body style="background: linear-gradient(-90deg,rgb(7, 3, 27) 25%, rgb(0, 0, 0) 75%);">
+
+	<div style="width: 50%; margin: 0 20px;">
+		<h1 style="color: #fff;">Выберите песню</h1>
+		<h2><a href="/Bloodhound.html">Bloodhound Gang - Uhn Tiss Uhn Tiss</a></h2>
+		<h2><a href="/blue.html">Eiffel 65 - Blue</a></h2>
+		<h2><a href="/lemon.html">Fools Garden - Lemon Tree</a></h2>
+		<h2><a href="/neiromonah.html">Нейромонах Феофан – Хочу в пляс</a></h2>
+		<h2><a href="/shut.html">Ляпис Трубецкой - Шут</a></h2>
+		<h2><a href="/kih_so_skali.html">Король и Шут - Прыгну со скалы</a></h2>
+		<h2><a href="/Yesterday.html">The Beatles - Yesterday</a></h2>
+
+	</div>
+
+	<div class="base" style="width: 0px; ">
+		<div class="base1" style="width: 750px; right: 10px;">
+			<div id="chart"></div>
+			<div id="log"></div>
+			<div id="text" style="margin-left: 120px; font-size: 22px;">
+				<span id="a"></span><span id="b"></span><span id="c"></span>
+			</div>
+			<div id="speedKlava">
+				<div class="speedometrCenter" id="speedometr">
+					<div class="strelka"></div>
+				</div>
+				<div class="keybordCenter" id="keybord">
+					<div class="keybord" id="fon"></div>
+					<div class="fonActiv" id="error" style="background-color: red; left: 50px;"></div>
+					<div class="fonActiv" id="next" style="background-color: greenyellow;"></div>
+					<div class="keybordImgEng"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="menu">
+		<div class="el">скорость<input type="range" min="0.2" max="2" step="0.01" value="1" id="setSpeed"></div>
+		<span id="getSpeed"></span>
+		<span id="symMin"></span>
+		<span id="totalSym"></span>
+		<div class="el"><input type="range" min="0" max="1" step="0.01" value="0.2" id="volume">🔈</div>
+	</div>
+
+	<audio src="error/e1.mp3"></audio>
+	<audio src="error/e2.mp3"></audio>
+	<audio src="error/e3.mp3"></audio>
+	<audio src="error/e4.mp3"></audio>
+	<audio src="error/e5.mp3"></audio>
+	<audio src="error/e6.mp3"></audio>
+	<audio src="error/e7.mp3"></audio>
+	<audio src="tada.wav"></audio>
+
+</body>
+<script src="lemon.js" type="text/javascript"></script>
+<!-- <script src="script.js" type="text/javascript"></script> -->
+<script src="demo.js" type="text/javascript"></script>
+<script src="/chart/lib/liteChart.min.js"></script>
+<script src="chartSeting.js"></script>
+
+</html>
