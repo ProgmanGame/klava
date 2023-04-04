@@ -215,6 +215,6 @@ function setChart() {
 	let min = timechart / 60;
 	let sec = timechart % 60
 	chartValue.labels.push("" + Math.floor(min) + ":" + sec)
-	chartValue.legend.push(listTimeOfValidClicks.length * 20)
+	chartValue.legend.push(listTimeOfValidClicks.length * 60)
 	timechart += 5;
 }
